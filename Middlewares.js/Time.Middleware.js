@@ -3,7 +3,7 @@ module.exports = (req, res, next) => {
     const day = today.getDay();
     const hours = today.getHours();
 
-    if(hours >= 9 || hours<= 17 || day!= 6 || day!= 1){
+    if(hours >= 9 || hours<= 17 || day!= 1 || day!= 5){
         next();
     }
     else{

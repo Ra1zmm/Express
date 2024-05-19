@@ -1,0 +1,127 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* Navigation Styles */
+  
+  .nav-container {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .list-container {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .list-container li {
+    margin-right: 20px;
+  }
+  
+  .list-container a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .list-container a:hover {
+    color: #ccc;
+  }
+  
+  .list-container a.active {
+    color: #66d9ef;
+  }
+  
+  /* Section Styles */
+  
+  section {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .paragraph-container {
+    width: 50%;
+  }
+  
+  .paragraph-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .paragraph-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  section img {
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+    }
+    nav img {
+      width: 60px;
+      height: 60px;
+    }
+    .list-container {
+      flex-direction: column;
+    }
+    .list-container li {
+      margin-right: 0;
+    }
+    .list-container a {
+      font-size: 18px;
+    }
+    section {
+      flex-direction: column;
+    }
+    .paragraph-container {
+      width: 100%;
+    }
+    section img {
+      width: 100%;
+      margin-top: 2rem;
+    }
+  }
